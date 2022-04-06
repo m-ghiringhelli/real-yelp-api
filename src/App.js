@@ -13,13 +13,12 @@ function App() {
     const fetchData = async () => {
       const data = await fetchBusinesses();
       setBusinesses(data);
-      // setLoading(false);
+      setTimeout(setLoading(false), 5000);
     };
     fetchData();
   }, []);
-
   // TODO -- add event for button click to handle calling fetchBusinesses with zip / search
-
+  console.log(businesses);
   return (
     <div className="App">
       <h1>Alchemy Restaurant Finder</h1>
