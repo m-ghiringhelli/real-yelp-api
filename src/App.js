@@ -13,7 +13,7 @@ function App() {
     const fetchData = async () => {
       const data = await fetchBusinesses();
       setBusinesses(data);
-      setLoading(false);
+      // setLoading(false);
     };
     fetchData();
   }, []);
